@@ -24,10 +24,11 @@ body {
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background-image:url('./Submergix_logo1.png');
   color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+  width: 30%;
+  height: 50px;
+  padding: none;
 }
 
 #myBtn {
@@ -44,6 +45,19 @@ body {
   background: #ddd;
   color: black;
 }
+
+div.logo::before {
+   content:url(./Submergix_logo1.png);
+}
+
+div.picture1 {
+   width:100px; /*width of your image*/
+   height:100px; /*height of your image*/
+   background-image:url('./Submergix_logo1.png');
+   margin:0; /* If you want no margin */
+   padding:0; /*if your want to padding */
+}
+
 </style>
 </head>
 <body>
@@ -54,9 +68,12 @@ body {
 </video>
 
 <div class="content">
-  <h1>Submergix</h1>
+	
+  <h1 class="picture1">&nbsp</h1>
   <h1>Coming Soon...</h1>
 </div>
+
+<div class="logo"></div>
 
 <script>
 var video = document.getElementById("myVideo");
